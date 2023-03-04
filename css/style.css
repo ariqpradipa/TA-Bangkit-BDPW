@@ -129,3 +129,63 @@ main .content .content-description button:hover {
     color: #2D3E50;
     background-color: transparent;
 }
+
+#aside {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main aside table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+th,
+td {
+    padding-left: 20px;
+}
+
+.card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer {
+    padding: 5px;
+    color: #fff;
+    background-color: #00000f;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+
+    main img {
+        display: none
+    }
+}
